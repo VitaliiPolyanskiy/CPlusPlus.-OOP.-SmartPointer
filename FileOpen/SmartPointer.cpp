@@ -47,6 +47,7 @@ public:
 		cout << "Copy-Constructor" << endl;
 		//создается копия - увеличиваем счётчик
 		ptr = obj.ptr;
+		count_copy = obj.count_copy;
 		count_copy++;		
 	}
 
@@ -56,6 +57,7 @@ public:
 		cout << "operator = " << endl;
 		//создается копия - увеличиваем счётчик
 		ptr = obj.ptr;
+		count_copy = obj.count_copy;
 		count_copy++;
 		//возвращаем сам объект для ситуации a=b=c
 		return *this;
